@@ -1,0 +1,21 @@
+[project]
+name = "project-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "raoasif", email = "raoasif452@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+abc = "project_2:func"
+hani = "karachi.lahore.my_file:greet"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["project_3"]
